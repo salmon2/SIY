@@ -11,11 +11,4 @@ import org.springframework.web.bind.annotation.PostMapping;
 public interface UserServiceClient {
     @GetMapping("/profile/{username}")
     RelatedUser getUserData(@PathVariable("username") String username);
-
-
-
-
-
-    //@GetMapping(value = "/user")
-    //@PostMapping(value = "/signup")
 }
