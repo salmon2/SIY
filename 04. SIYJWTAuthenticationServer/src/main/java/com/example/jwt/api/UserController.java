@@ -23,7 +23,6 @@ import java.util.UUID;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/")
 public class UserController {
 
     private final UserService userService;

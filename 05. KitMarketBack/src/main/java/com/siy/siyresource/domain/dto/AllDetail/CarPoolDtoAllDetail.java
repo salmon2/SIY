@@ -20,6 +20,7 @@ public class CarPoolDtoAllDetail extends PostDtoAllDetail {
     private String fare;
     private String departure;
     private String destination;
+    private String Gender;
 
     @Embedded
     private DepartTime departTime;
@@ -37,6 +38,7 @@ public class CarPoolDtoAllDetail extends PostDtoAllDetail {
         this.departTime = DepartTime.LocalDateTimeToDepartTime(carPool.getDepartHours(), carPool.getDepartMinutes());
         this.Long = carPool.getLong_();
         this.lat = carPool.getLat();
+        this.Gender = carPool.getQualifyGender().toString();
     }
 }
 

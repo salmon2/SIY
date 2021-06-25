@@ -19,6 +19,7 @@ public class CarPoolDtoClosedDetail extends PostDtoClosedDetail{
     private String fare;
     private String departure;
     private String destination;
+    private String Gender;
 
     @Embedded
     private DepartTime departTime;
@@ -36,5 +37,6 @@ public class CarPoolDtoClosedDetail extends PostDtoClosedDetail{
         this.departTime = DepartTime.LocalDateTimeToDepartTime(carPool.getDepartHours(), carPool.getDepartMinutes());
         this.Long = carPool.getLong_();
         this.lat = carPool.getLat();
+        this.Gender = carPool.getQualifyGender().toString();
     }
 }

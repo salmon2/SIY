@@ -10,6 +10,7 @@ public class CreateCarPoolRequest extends CreatePostRequest{
     private String fare;
     private DepartTime departTime;
     private String destination;
+    private String departure;
     private Double lat;
     @JsonAlias("long")
     private Double Long;

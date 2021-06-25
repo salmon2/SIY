@@ -32,18 +32,24 @@ const UpdatePostButton = () => {
     long: initialLong,
   } = useSelector((state) => state.post.singlePost);
 
-  const { hours: departHours, minutes: departMinutes } = departTime;
-
+  if(category == 'carPool'){
+    const { hours: departHours, minutes: departMinutes } = departTime;
+  }else{
+    const hours = null;
+    const minutes = null;
+    }
   const year = deadLine.substr(0, 4);
   const month = parseInt(deadLine.substr(5, 2));
   const date = parseInt(deadLine.substr(8, 2));
   let hours = parseInt(deadLine.substr(11, 2));
   let ampm = 'AM';
+
   const minutes = parseInt(deadLine.substr(14, 2));
   if (hours >= 12) {
     hours = hours - 12;
     ampm = 'PM';
   }
+
   const initialInputs = {
     title,
     content,
@@ -65,8 +71,6 @@ const UpdatePostButton = () => {
     projectDuration,
     departure,
     destination,
-    departHours,
-    departMinutes,
     contestCategory: 'REPORT',
     subject: 'ENGLISH',
     qualification: 'HIGHSCHOOL',

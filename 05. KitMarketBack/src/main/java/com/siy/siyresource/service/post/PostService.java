@@ -558,6 +558,7 @@ public class PostService {
         carPool.setDepartHours(request.getDepartTime().getHours());
         carPool.setDepartMinutes(request.getDepartTime().getMinutes());
         carPool.setDestination(request.getDestination());
+        carPool.setDeparture(request.getDeparture());
         carPool.setLong_(request.getLong());
         carPool.setLat(request.getLat());
 
