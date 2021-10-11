@@ -25,11 +25,17 @@ tags: [spring, board]
 
 ---
 개발환경 : IntelliJ
+
 빌드 : Maven
+
 백엔드 프레임워크 : Spring
+
 백엔드 라이브러리 : spring security, redis, rabbitmb, eureka server, spring cloud
+
 프론트 : React, Next.js,  
+
 ORM : Jpa, QueryDsl
+
 DB : MariaDB
 
 ---
